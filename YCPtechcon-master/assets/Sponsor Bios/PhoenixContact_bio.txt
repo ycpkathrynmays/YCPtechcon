@@ -1,0 +1,5 @@
+Phoenix Contact - Bio
+
+Phoenix Contact, headquartered in Blomberg, Ostwestfalen-Lippe, Germany, is a manufacturer of industrial automation, interconnection, and interface solutions. The company develops terminal blocks, relays, connectors, signal conditioners, power supplies, controllers & PLCs, I/O systems, Industrial Ethernet, controller system cabling, PCB terminal blocks & connectors, and surge suppression. In addition, Phoenix Contact manufactures products for use with Modbus, DeviceNet, EtherNet/IP, CANopen, PROFIBUS and PROFINET networks.
+
+The company was founded in 1923 in Essen, Germany and in 2014, accounted for annual sales in excess of 1.77 billion Euro (approximately $2 billion USD). Phoenix Contact manufactures in over 10 nations: Germany, USA, China, India, Poland, Greece, Brazil, Turkey, Sweden and Argentina and employs 12,900 employees in 50 international subsidiaries.

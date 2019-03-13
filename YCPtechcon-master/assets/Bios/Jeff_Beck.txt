@@ -1,0 +1,6 @@
+
+Jeff Beck
+Software Architect
+SmartThings
+
+Jeff is focused on the cloud aspects of the open IoT platform that is SmartThings. He has designed and built globally distributed micro-services that support user routing and authentication systems. Jeff worked deeply with Samsung teams in a role where he helped design and lead engineering efforts across multiple sites at once. Jeff has also worked deeply with SpringSecurity OAuth and JWT, creating a globally distributed OAuth auth server.
