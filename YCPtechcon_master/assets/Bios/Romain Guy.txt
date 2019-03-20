@@ -1,0 +1,4 @@
+Romain Guy
+Google
+Senior Staff Software Engineer
+Romain is an engineer at Google. He worked on the Android Framework team, leading the UI toolkit and UI renderer, and now works on new Kotlin and graphics related projects.
