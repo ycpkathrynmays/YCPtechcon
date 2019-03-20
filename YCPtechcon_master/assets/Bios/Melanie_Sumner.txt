@@ -1,0 +1,4 @@
+Melanie Sumner
+Software Engineer
+LinkedIn
+Melanie is a decorated, disabled military veteran who became a software engineer after her enlistment ended. She now works as a Senior Software Engineer at LinkedIn with a specific focus on accessibility in Ember. As a member of the Ember.js core team, she is working on ways to make accessible applications easier to implement, and the importance of this work easier to understand.
