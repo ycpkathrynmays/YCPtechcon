@@ -104,10 +104,31 @@ textarea {
 
    header{
      height: 98px;
-     background-color: #FFFFFF;
+     background-color: rgba(255, 255, 255, .8);
      display: flex;
-
+     position: sticky;
+     top: 0;
    }
+
+   .custom_header_home{
+     width: 100vw;
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Roboto', sans-serif;
+     align-items: center;
+     position: sticky;
+     z-index: 10;
+   }
+
+   .custom_header{
+     width: 100vw;
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Roboto', sans-serif;
+     align-items: center;
+     position: sticky;
+   }
+
 
    .HeroSection{
      background-image: url('../assets/img/hero_image.jpg');
@@ -117,17 +138,10 @@ textarea {
      background-size: cover;
      background-repeat: no-repeat;
      overflow: hidden;
+     position: static;
+     margin-top: -100px;
    }
 
-   .custom_header{
-     width: 100vw;
-     display: flex;
-     justify-content: space-around;
-     font-family: 'Roboto', sans-serif;
-     align-items: center;
-     position: relative;
-     padding:
-   }
 
    .header_image img{
      left: 12px;
@@ -172,9 +186,12 @@ textarea {
      align-items: center;
      margin: 0 auto;
      flex-direction: column;
+     flex-wrap: wrap;
+     position: relative;
+     display: flex;
    }
 
-   .Sponsors{
+   .Content{
      display: flex;
      justify-content: center;
      align-items: center;
@@ -183,11 +200,43 @@ textarea {
      flex-direction: column;
    }
 
-   .Sponsors h1{
+   .Content h1{
      font-size: 36px;
      margin: 0;
    }
+   .Content p{
+     font-size: 24px;
+     margin: 0;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+   }
 
+   .sponsor_box{
+     width: 350px;
+     height: 290px;
+   border: 1px solid #918F8F;
+   background-color: #FFF;
+   padding: 25px;
+   margin: 25px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.sponsor_box img{
+  width: 200px;
+  height: auto;
+
+}
+
+.Middle_Section_Sponsors{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
 
 
 
@@ -204,7 +253,8 @@ textarea {
      align-items: center;
      overflow: hidden;
      bottom: 0;
-     position: relative;
+     position: static;
+     bottom: 0;
    }
 
 .custom_footer{
@@ -218,6 +268,18 @@ textarea {
 
 }
 .social a{
+  right: 10%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.address a{
+  right: 10%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright a{
   right: 10%;
   text-decoration: none;
   color: #fff;
