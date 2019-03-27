@@ -110,16 +110,6 @@ textarea {
      top: 0;
    }
 
-   .custom_header_home{
-     width: 100vw;
-     display: flex;
-     justify-content: space-around;
-     font-family: 'Roboto', sans-serif;
-     align-items: center;
-     position: sticky;
-     z-index: 10;
-   }
-
    .custom_header{
      width: 100vw;
      display: flex;
@@ -127,6 +117,7 @@ textarea {
      font-family: 'Roboto', sans-serif;
      align-items: center;
      position: sticky;
+     z-index: 10;
    }
 
 
@@ -238,6 +229,23 @@ textarea {
   flex-wrap: wrap;
 }
 
+.speaker_box{
+
+}
+
+.speaker_box img{
+width: 200px;
+height: auto;
+
+}
+
+.Middle_Section_Speakers{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 90%;
+flex-wrap: wrap;
+}
 
 
 
