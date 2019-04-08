@@ -100,6 +100,9 @@ textarea {
      font-family: 'Roboto', sans-serif;
      color: #000;
      background: #CDE8F3;
+     justify-content: center;
+     align-items: center;
+
    }
 
    header{
@@ -220,35 +223,59 @@ textarea {
   height: auto;
 
 }
-
 .Middle_Section_Sponsors{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 90%;
-  flex-wrap: wrap;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 80%;
+flex-wrap: wrap;
+margin: auto;
+justify-content: center;
 }
+
+
 
 .speaker_box{
+margin: 3rem;
+display:flex;
+align-items: top;
+justify-content: center;
+flex-direction: column;
 
 }
 
-.speaker_box img{
-width: 200px;
-height: auto;
 
+
+  .speaker_box img{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+
+}
+
+  .speaker_box h2{
+    display: flex;
+    align-items: center;
+  font-size: 24px;
+  justify-content: center;
+}
+
+  .speaker_box h3{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
 }
 
 .Middle_Section_Speakers{
 display: flex;
 flex-direction: row;
 align-items: center;
-width: 90%;
+width: 80%;
 flex-wrap: wrap;
+margin: auto;
+justify-content: center;
 }
-
-
-
 
 
 
@@ -380,9 +407,46 @@ flex-wrap: wrap;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 1440px) {
     /* Style adjustments for viewports that meet the condition */
+
 }
+
+@media only screen and (max-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+    .speaker_box img{
+      width: 300px;
+      height: auto;
+      padding: 10px;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    /* Style adjustments for viewports that meet the condition */
+    .speaker_box img{
+      width: 330px;
+      height: auto;
+      padding: 10px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
