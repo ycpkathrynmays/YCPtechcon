@@ -277,6 +277,35 @@ margin: auto;
 justify-content: center;
 }
 
+.center_me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Contact_Page {
+  width: 1214px;
+  height: 457px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.Privacy_Policy {
+  width: 1214px;
+  height: 457px;
+  display: flex;
+  align-items: top;
+  background-color: #fff;
+  justify-content: center;
+  overflow: scroll;
+  margin: 50px;
+  padding: 5px;
+}
+
+
 
 
    footer{
