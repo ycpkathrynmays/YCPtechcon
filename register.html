@@ -21,7 +21,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-
+  <!-- Add your site or application content here -->
   <!-- This is my Header -->
         <header class="custom_header">
           <div class="header_image"><a href="index.html"><img src="assets/devcon_logo.png" alt="PA Dev Con Logo"></a>
@@ -29,24 +29,65 @@
           <div id="MainNav">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="register.html">Register</a></li>
+              <li><a href="register.html" class="page_indicator">Register</a></li>
               <li><a href="schedule.html">Schedule</a></li>
-              <li><a href="sponsors.html" class="page_indicator">Sponsors</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="speakers.html">Speakers</a></li>
             </ul>
           </div>
         </header>
   <!-- Closing header-->
-<div class="Content"><h1>PWC</h1>
-  <section class="sponsor_section">
-    <div class="sponsor_box">
-      <img src="assets/Sponsors Logo/PWC.png" alt="PWC Logo">
-    </div>
-  </section>
-    <p>PWC's accounting practice originated in London well over a century ago. As times changed and PWC expanded worldwide, our commitment to clientsólike youónever wavered. With us, you're always supported by a global network of more than 236,000 people in 158 countries with one goal: to help your business thrive.</br>
+<div class="Content"><h1>Join Us!</h1></div>
 
-PWC's professional services, including audit and assurance, tax and consulting, cover such areas as cybersecurity and privacy,  human resources, deals and forensics. We help resolve complex issues and identify opportunities across these industries.</p>
-  </div>
+
+  <section class="register">
+    <div class="gimme_space">
+      <h2 class="sticky_header">Contact Information</h2>
+      <div class="contact_info container">
+        <h3>When:</h3>
+        <p>October 4-6, 2019</p>
+        <h3>Where:</h3>
+        <p>1 N 2nd St, Harrisburg, PA 17101</p>
+        <div class="padding_box">
+              <img src="assets/img/map.png" alt="Google Maps">
+              </div>
+            <div class="home_buttons">
+        <a href="https://www.google.com/maps/place/1+N+2nd+St,+Harrisburg,+PA+17110/@40.260357,-76.8841034,17z/data=!3m1!4b1!4m5!3m4!1s0x89c8c1053482533f:0xdb8fa56d8f02b9a4!8m2!3d40.260357!4d-76.8819147" target="_blank" title="Directions">
+              <button class="activated">Directions</button>
+              </a>
+            </div>
+      </div>
+    </div>
+
+
+          <div class="registration_section gimme_space">
+            <form action="" method="POST" />
+              Name*<br>
+             <input type="text" name="name">
+             <br>
+             Email*<br>
+             <input type="text" name="email">
+             <br>
+             Phone<br>
+             <input type="text" name="phone">
+             <br>
+             <label for="fee">Fee*</label><br>
+             <select id="fee" name="fee">
+               <option value="1day">1 Day Pass - $899</option>
+               <option value="2day">2 Day Pass - $1,099</option>
+               <option value="3day">3 Day Pass - $1,299</option>
+               <option value="3day_workshop">3 Day Pass + Workshops - $1,499</option>
+               <option value="students">Students - $300/day</option>
+             </select><br>
+             <label for="payment">Payment*</label><br>
+             <select id="payment" name="payment">
+               <option value="paypal">PayPal</option>
+               <option value="visa">Visa, Mastercard, Discover</option>
+             </select><br>
+            <input type="submit" value="Continue">
+            </form>
+          </div>
+        </section>
 
 
 
