@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -24,14 +26,32 @@
         <header class="custom_header">
           <div class="header_image"><a href="index.html"><img src="assets/devcon_logo.png" alt="PA Dev Con Logo"></a>
           </div>
-          <div id="MainNav">
+
+          <div class="topnav" id="MainNav">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="register.html">Register</a></li>
               <li><a href="schedule.html">Schedule</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="speakers.html" class="page_indicator">Speakers</a></li>
+
             </ul>
+          </div>
+
+          <div class="topnav_mobile hide" id="MainNav_Mobile">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="speakers.html" class="page_indicator">Speakers</a></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="hamburger_menu">
+            <a href="javascript:void(0);" class="hamburger_menu" onclick="myFunction()" id="hide">
+              <i class="fa fa-bars"></i></a>
           </div>
         </header>
   <!-- Closing header-->
@@ -62,19 +82,10 @@
     </footer>
     <!-- Closing Footer -->
 
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

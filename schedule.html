@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -25,14 +27,32 @@
         <header class="custom_header">
           <div class="header_image"><a href="index.html"><img src="assets/devcon_logo.png" alt="PA Dev Con Logo"></a>
           </div>
-          <div id="MainNav">
+
+          <div class="topnav" id="MainNav">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="register.html">Register</a></li>
               <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="speakers.html">Speakers</a></li>
+
             </ul>
+          </div>
+
+          <div class="topnav_mobile hide" id="MainNav_Mobile">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="hamburger_menu">
+            <a href="javascript:void(0);" class="hamburger_menu" onclick="myFunction()" id="hide">
+              <i class="fa fa-bars"></i></a>
           </div>
         </header>
   <!-- Closing header-->
@@ -66,170 +86,270 @@
   <td>7am - 8am</td>
   <td></td>
   <td>Registration &amp; Breakfast</td>
-  <td>Lobby</td>
+  <td><i>Lobby</i></td>
   </tr>
   <tr >
   <td>8am - 8:30am</td>
-  <td>Chuck Russel - Organizer</td>
+  <td><b>Chuck Russel - Organizer</b></td>
   <td>Kickoff Speech</td>
-  <td>Grand Ballroom</td>
+  <td><i>Grand Ballroom</i></td>
   </tr>
   <tr >
   <td>8:45am - 9:30am</td>
   <td>
-  <p>Dave Alpert</p>
+  <p><b>Dave Alpert</b></p>
   </td>
   <td>
   <p>Augmented Reality in a Fracture Reality</p>
   </td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
   <tr >
   <td></td>
   <td>
-  <p>Leemay Nassery</p>
+  <p><b>Leemay Nassery</b></p>
   </td>
   <td>Digital Experience On-Demand</td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
   <tr >
   <td></td>
-  <td>Renaud Visage</td>
+  <td><b>Renaud Visage</b></td>
   <td>Ruby In Rails Migration</td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
   <tr >
   <td>9:45am - 10:30am</td>
-  <td>Jeff Beck</td>
+  <td><b>Jeff Beck</b></td>
   <td>SmartThings - An Origin Story</td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
   <tr >
   <td></td>
-  <td>Romain Guy</td>
+  <td><b>Romain Guy</b></td>
   <td>
   <p>Beginning Angular 2.0</p>
   <p></p>
   </td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
   <tr >
   <td></td>
   <td>
-  <p>Tricia Katz</p>
+  <p><b>Tricia Katz</b></p>
   </td>
   <td>
   <p>Continuous Development Pipeline Considerations</p>
   </td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
   <tr >
   <td>10:45am - 11:30am</td>
   <td>
-  <p>Phil Nash</p>
+  <p><b>Phil Nash</b></p>
   </td>
   <td>
   <p>Social Data Algorithims</p>
   </td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
   <tr >
   <td></td>
   <td>
-  <p>Marie Leaf</p>
+  <p><b>Marie Leaf</b></p>
   </td>
   <td>
   <p>Blockchain - From out of the Dark Web to Civic Engagement</p>
   </td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
-  <td>Elisha Dvorak</td>
+  <td><b>Elisha Dvorak</b></td>
   <td>Adobe Experience Manager Primer</td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
   <tr >
   <td>11:45am - 1:15pm</td>
   <td></td>
   <td>Lunch</td>
-  <td>Grand Ballroom</td>
+  <td><i>Grand Ballroom</i></td>
   </tr>
   <tr >
   <td>1:30pm - 2:15pm</td>
   <td>
-  <p>E. G. Nadhan</p>
+  <p><b>E. G. Nadhan</b></p>
   </td>
   <td>
   <p>Linux and IIS</p>
   </td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
   <tr >
   <td></td>
   <td>
-  <p>Dana White</p>
+  <p><b>Dana White</b></p>
   </td>
   <td>Digital Media Experiences</td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
-  <td>Cal Henderson</td>
+  <td><b>Cal Henderson</b></td>
   <td>Meaningful Digital Communication</td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
-  <tr >
+  <tr>
   <td>2:30pm - 3:15pm</td>
   <td>
-  <p>Melanie Sumner</p>
+  <p><b>Melanie Sumner</b></p>
   </td>
   <td>
   <p>Ember.js vs Electron - A Breakdown</p>
   </td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
   <td>
-  <p>Harry Roberts</p>
+  <p><b>Harry Roberts</b></p>
   </td>
   <td>Google Analytics in the age of Privacy</td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
-  <td>Rebecca Fitzhuh</td>
+  <td><b>Rebecca Fitzhuh</b></td>
   <td>Brining Military Discipline into the Agile Environment</td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
-  <tr >
+  <tr>
   <td>3:30pm - 4:15pm</td>
   <td>
-  <p>Matt Layman</p>
+  <p><b>Matt Layman</b></p>
   </td>
   <td>
   <p>Python Foundations</p>
   </td>
-  <td>Ballroom A</td>
+  <td><i>Ballroom A</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
-  <td>Rohit Basu</td>
+  <td><b>Rohit Basu</b></td>
   <td>Online Payments that Don't Suck</td>
-  <td>Ballroom B</td>
+  <td><i>Ballroom B</i></td>
   </tr>
-  <tr >
+  <tr>
   <td></td>
-  <td>Sarah Squire</td>
+  <td><b>Sarah Squire</b></td>
   <td>OpenID Foundation Pursuits</td>
-  <td>Ballroom C</td>
+  <td><i>Ballroom C</i></td>
   </tr>
-  <tr >
+  <tr>
   <td>4:30pm - On</td>
   <td></td>
   <td>Technology Lounge - Bar and Lounge</td>
-  <td>First Two Floors of the Hotel</td>
+  <td><i>First Two Floors of the Hotel</i></td>
+  </tr>
+  </tbody>
+  </table>
+</div>
+
+
+<div>
+  <table class="schedule_mobile">
+  <tbody>
+  <tr >
+  <th>Time</th>
+  <th>Spreaker, Topic; Room</th>
+  </tr>
+  <tr>
+  <td>7am - 8am</td>
+  <td>Registration &amp; Breakfast;<br><i>Lobby</i></td>
+  </tr>
+  <tr>
+  <td>8am - 8:30am</td>
+  <td><b>Chuck Russel - Organizer,</b><br>Kickoff Speech;<br><i>Grand Ballroom</i></td>
+  </tr>
+  <tr>
+  <td>8:45am - 9:30am</td>
+  <td><b>Dave Alpert,</b><br>Augmented Reality in a Fracture Reality;<br><i>Ballroom A</i></td>
+  </tr>
+  <td></td>
+  <td><b>Leemay Nassery,</b><br>Digital Experience On-Demand;<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+    <td></td>
+  <td><b>Renaud Visage,</b><br>Ruby In Rails Migration;<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>9:45am - 10:30am</td>
+  <td><b>Jeff Beck,</b><br>SmartThings - An Origin Story;<br><i>Ballroom A</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Romain Guy,</b><br>Beginning Angular 2.0;<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+    <td></td>
+  <td><b>Tricia Katz,</b><br>Continuous Development Pipeline Considerations;<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>10:45am - 11:30am</td>
+  <td><b>Phil Nash,</b><br>Social Data Algorithims;<br><i>Ballroom A</i></td>
+  </tr>
+  <tr>
+    <td></td>
+  <td><b>Marie Leaf,</b><br>Blockchain - From out of the Dark Web to Civic Engagement;<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Elisha Dvorak,</b><br>Adobe Experience Manager Primer;<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>11:45am - 1:15pm</td>
+  <td>Lunch;<br><i>Grand Ballroom</i></td>
+  </tr>
+  <tr>
+  <td>1:30pm - 2:15pm</td>
+  <td><b>E. G. Nadhan,</b><br>Linux and IIS;<br><i>Ballroom A</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Dana White,</b><br>Digital Media Experiences;<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Cal Henderson</b><br>Meaningful Digital Communication<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>2:30pm - 3:15pm</td>
+  <td>
+  <p><b>Melanie Sumner,</b><br>Ember.js vs Electron - A Breakdown;<br><i>Ballroom A</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Harry Roberts</b><br>Google Analytics in the age of Privacy<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Rebecca Fitzhuh</b><br>Brining Military Discipline into the Agile Environment<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>3:30pm - 4:15pm</td>
+  <td><b>Matt Layman,</b><br>Python Foundations;<br><i>Ballroom A</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Rohit Basu,</b><br>Online Payments that Don't Suck;<br><i>Ballroom B</i></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><b>Sarah Squire,</b><br>OpenID Foundation Pursuits;<br><i>Ballroom C</i></td>
+  </tr>
+  <tr>
+  <td>4:30pm - On</td>
+  <td>Technology Lounge - Bar and Lounge;<br><i>First Two Floors of the Hotel</i></td>
   </tr>
   </tbody>
   </table>
@@ -256,17 +376,9 @@
   <!-- Closing Footer -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

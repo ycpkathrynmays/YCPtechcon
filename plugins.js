@@ -33,3 +33,7 @@ function myFunction() {
 }
 
 // Place any jQuery/helper plugins in here.
+
+$( "#hide" ).click(function() {
+$( ".hide" ).toggle('slow');
+});
