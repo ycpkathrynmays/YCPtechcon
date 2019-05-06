@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -25,14 +27,32 @@
         <header class="custom_header">
           <div class="header_image"><a href="index.html"><img src="assets/devcon_logo.png" alt="PA Dev Con Logo"></a>
           </div>
-          <div id="MainNav">
+
+          <div class="topnav" id="MainNav">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="register.html">Register</a></li>
               <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="speakers.html">Speakers</a></li>
+
             </ul>
+          </div>
+
+          <div class="topnav_mobile hide" id="MainNav_Mobile">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="hamburger_menu">
+            <a href="javascript:void(0);" class="hamburger_menu" onclick="myFunction()" id="hide">
+              <i class="fa fa-bars"></i></a>
           </div>
         </header>
   <!-- Closing header-->
@@ -67,132 +87,202 @@
 <td>7am - 8am</td>
 <td></td>
 <td>Registration & Breakfast</td>
-<td>Lobby</td>
+<td><i>Lobby</i></td>
 </tr>
 <tr>
 <td>8am - 8:30am</td>
-<td>Chuck Russel - Organizer</td>
+<td><b>Chuck Russel - Organizer</b></td>
 <td>Day Highlights</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td>8:45am - 9:30am</td>
-<td>Sarah Drasner</td>
+<td><b>Sarah Drasner</b></td>
 <td>Advanced SCSS</td>
-<td>Ballroom A</td>
+<td><i>Ballroom A</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Michael Albers</td>
+<td><b>Michael Albers</b></td>
 <td>Authentication Systems and Tokens</td>
-<td>Ballroom B</td>
+<td><i>Ballroom B</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Ryan King</td>
+<td><b>Ryan King</b></td>
 <td>Customer Experience at the Gallery</td>
-<td>Ballroom C</td>
+<td><i>Ballroom C</i></td>
 </tr>
 <tr>
 <td>9:45am - 11am</td>
-<td>Panel Moderator: Allison Lowery</td>
+<td><b>Panel Moderator: Allison Lowery</b></td>
 <td>Panel Discussion: Venture Capital in Transformative Technology</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Panelist: Phil Nash</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Panelist: Harry Roberts</td>
+<td><b>Panelist: Phil Nash</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>Panelist: Melanie Sumner</td>
+<td><b>Panelist: Harry Roberts</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>Panelist: Rohit Basu</td>
+<td><b>Panelist: Melanie Sumner</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Panelist: Rohit Basu</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>11:15am - 12pm</td>
-<td>Sponsor Hall</td>
+<td><b>Sponsor Hall</b></td>
 <td>Sponsor Presentation</td>
-<td>Lobby</td>
+<td><i>Lobby</i></td>
 </tr>
 <tr>
 <td>12pm - 1:15pm</td>
 <td></td>
 <td>Lunch</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td>1:30pm - 2:15pm</td>
-<td>Leemay Nassery</td>
+<td><b>Leemay Nassery</b></td>
 <td>Modern Fullstack Workflow</td>
-<td>Ballroom A</td>
+<td><i>Ballroom A</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Marie Leaf</td>
+<td><b>Marie Leaf</b></td>
 <td>Educating the Future of Technology</td>
-<td>Ballroom B</td>
+<td><i>Ballroom B</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Dave Alpert</td>
+<td><b>Dave Alpert</b></td>
 <td>Geo-Services Powering Everything</td>
-<td>Ballroom C</td>
+<td><i>Ballroom C</i></td>
 </tr>
 <tr>
 <td>2:30pm - 3:45pm</td>
-<td>Panel Moderator: David Hickthier</td>
+<td><b>Panel Moderator: David Hickthier</b></td>
 <td>Modern User Interfaces</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Panelist: Brad Frost</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td>Panelist: Sarak Drasner</td>
+<td><b>Panelist: Brad Frost</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td></td>
-<td>Panelist: Romain Guy</td>
+<td><b>Panelist: Sarak Drasner</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Panelist: Romain Guy</b></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>4pm - 4:30pm</td>
-<td>Sponsor Hall</td>
+<td><b>Sponsor Hall</b></td>
 <td></td>
-<td>Lobby</td>
+<td><i>Lobby</i></td>
 </tr>
 <tr>
 <td>4:30 - On</td>
 <td></td>
 <td>Harrisburg Senators Ballpark After Path</td>
-<td>City Island</td>
+<td><i>City Island</i></td>
 </tr>
 </tbody>
 </table>
 </div>
 
+
+
+<div>
+  <table class="schedule_mobile">
+<tbody>
+<tr>
+<th>Time</th>
+<th>Speaker, Topic; Room</th>
+</tr>
+<tr>
+<td>7am - 8am</td>
+<td>Registration & Breakfast;<br><i>Lobby</i></td>
+</tr>
+<tr>
+<td>8am - 8:30am</td>
+<td><b>Chuck Russel - Organizer,</b><br>Day Highlights;<br><i>Grand Ballroom</i></td>
+</tr>
+<tr>
+<td>8:45am - 9:30am</td>
+<td><b>Sarah Drasner,</b><br>Advanced SCSS;<br><i>Ballroom A</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Michael Albers,</b><br>Authentication Systems and Tokens;<br><i>Ballroom B</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Ryan King,</b><br>Customer Experience at the Gallery;<br><i>Ballroom C</i></td>
+</tr>
+<tr>
+<td>9:45am - 11am</td>
+<td><b>Panel Moderator: Allison Lowery</b><br><b>Panelist: Phil Nash</b><br><b>Panelist: Harry Roberts</b><br><b>Panelist: Melanie Sumner</b><br><b>Panelist: Rohit Basu</b><br>Panel Discussion: Venture Capital in Transformative Technology<br><i>Grand Ballroom</i></td>
+</tr>
+
+<tr>
+<td>11:15am - 12pm</td>
+<td><b>Sponsor Hall,</b><br>Sponsor Presentation;<br><i>Lobby</i></td>
+</tr>
+<tr>
+<td>12pm - 1:15pm</td>
+<td>Lunch;<br><i>Grand Ballroom</i></td>
+</tr>
+<tr>
+<td>1:30pm - 2:15pm</td>
+<td><b>Leemay Nassery,</b><br>Modern Fullstack Workflow;<br><i>Ballroom A</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Marie Leaf,</b><br>Educating the Future of Technology;<br><i>Ballroom B</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Dave Alpert,</b><br>Geo-Services Powering Everything;<br><i>Ballroom C</i></td>
+</tr>
+<tr>
+<td>2:30pm - 3:45pm</td>
+<td><b>Panel Moderator: David Hickthier</b><br><b>Panelist: Brad Frost</b><br><b>Panelist: Sarak Drasner</b><br><b>Panelist: Romain Guy</b><br>Modern User Interfaces<br><i>Grand Ballroom</i></td>
+</tr>
+
+<tr>
+<td>4pm - 4:30pm</td>
+<td><b>Sponsor Hall,</b><br><i>Lobby</i></td>
+</tr>
+<tr>
+<td>4:30 - On</td>
+<td>Harrisburg Senators Ballpark After Path;<br><i>City Island</i></td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
@@ -215,17 +305,9 @@
   <!-- Closing Footer -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

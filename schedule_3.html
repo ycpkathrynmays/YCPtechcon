@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -25,14 +27,32 @@
         <header class="custom_header">
           <div class="header_image"><a href="index.html"><img src="assets/devcon_logo.png" alt="PA Dev Con Logo"></a>
           </div>
-          <div id="MainNav">
+
+          <div class="topnav" id="MainNav">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="register.html">Register</a></li>
               <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
               <li><a href="sponsors.html">Sponsors</a></li>
               <li><a href="speakers.html">Speakers</a></li>
+
             </ul>
+          </div>
+
+          <div class="topnav_mobile hide" id="MainNav_Mobile">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="schedule.html" class="page_indicator">Schedule</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="speakers.html">Speakers</a></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="hamburger_menu">
+            <a href="javascript:void(0);" class="hamburger_menu" onclick="myFunction()" id="hide">
+              <i class="fa fa-bars"></i></a>
           </div>
         </header>
   <!-- Closing header-->
@@ -66,83 +86,148 @@
 <td>7am - 8am</td>
 <td></td>
 <td>Registration & Breakfast</td>
-<td>Lobby</td>
+<td><i>Lobby</i></td>
 </tr>
 <tr>
 <td>8am - 8:30am</td>
-<td>Chuck Russel - Organizer</td>
+<td><b>Chuck Russel - Organizer</b></td>
 <td>Kickoff Speech</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td>8:45am - 9:30am</td>
-<td>Elisha Dvorak</td>
+<td><b>Elisha Dvorak</b></td>
 <td>eLearning and Content Design</td>
-<td>Ballroom A</td>
+<td><i>Ballroom A</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Cal Henderson</td>
+<td><b>Cal Henderson</b></td>
 <td>Scaling a Business Exponentially</td>
-<td>Ballroom B</td>
+<td><i>Ballroom B</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Marie Leaf</td>
+<td><b>Marie Leaf</b></td>
 <td>Authenticating Security Tokens</td>
-<td>Ballroom C</td>
+<td><i>Ballroom C</i></td>
 </tr>
 <tr>
 <td>9:45am - 10:30am</td>
-<td>Tricia Katz</td>
+<td><b>Tricia Katz</b></td>
 <td>VUI integrations in you CX</td>
-<td>Ballroom A</td>
+<td><i>Ballroom A</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Matt Layman</td>
+<td><b>Matt Layman</b></td>
 <td>Digital Childhood Frontier</td>
-<td>Ballroom B</td>
+<td><i>Ballroom B</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Dana White</td>
+<td><b>Dana White</b></td>
 <td>Headless CMS</td>
-<td>Ballroom C</td>
+<td><i>Ballroom C</i></td>
 </tr>
 <tr>
 <td>10:45am - 11:30am</td>
-<td>E.G. Nadhan</td>
+<td><b>E.G. Nadhan</b></td>
 <td>Open Source in Enterprise</td>
-<td>Ballroom A</td>
+<td><i>Ballroom A</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Renuad Visage</td>
+<td><b>Renuad Visage</b></td>
 <td>Open API's</td>
-<td>Ballroom B</td>
+<td><i>Ballroom B</i></td>
 </tr>
 <tr>
 <td></td>
-<td>Ryan King</td>
+<td><b>Ryan King</b></td>
 <td>Data Processing and Synergy</td>
-<td>Ballroom C</td>
+<td><i>Ballroom C</i></td>
 </tr>
 <tr>
 <td>11:45am - 1:15pm</td>
 <td></td>
 <td>Lunch</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 <tr>
 <td>1:30pm - 2pm</td>
-<td>Chuck Russel - Organizer</td>
+<td><b>Chuck Russel - Organizer</b></td>
 <td>Final Comments</td>
-<td>Grand Ballroom</td>
+<td><i>Grand Ballroom</i></td>
 </tr>
 </tbody>
 </table>
 </div>
+
+<div>
+  <table class="schedule_mobile">
+<tbody>
+<tr>
+<th>Time</th>
+<th>Speaker, Topic; Room</th>
+</tr>
+<tr>
+<td>7am - 8am</td>
+<td>Registration & Breakfast;<br><i>Lobby</i></td>
+</tr>
+<tr>
+<td>8am - 8:30am</td>
+<td><b>Chuck Russel - Organizer,</b><br>Kickoff Speech;<br><i>Grand Ballroom</i></td>
+</tr>
+<tr>
+<td>8:45am - 9:30am</td>
+<td><b>Elisha Dvorak,</b><br>eLearning and Content Design;<br><i>Ballroom A</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Cal Henderson,</b><br>Scaling a Business Exponentially;<br><i>Ballroom B</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Marie Leaf,</b><br>Authenticating Security Tokens;<br><i>Ballroom C</i></td>
+</tr>
+<tr>
+<td>9:45am - 10:30am</td>
+<td><b>Tricia Katz,</b><br>VUI integrations in you CX;<br><i>Ballroom A</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Matt Layman,</b><br>Digital Childhood Frontier;<br><i>Ballroom B</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Dana White,</b><br>Headless CMS;<br><i>Ballroom C</i></td>
+</tr>
+<tr>
+<td>10:45am - 11:30am</td>
+<td><b>E.G. Nadhan,</b><br>Open Source in Enterprise;<br><i>Ballroom A</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Renuad Visage,</b><br>Open API's;<br><i>Ballroom B</i></td>
+</tr>
+<tr>
+<td></td>
+<td><b>Ryan King,</b><br>Data Processing and Synergy;<br><i>Ballroom C</i></td>
+</tr>
+<tr>
+<td>11:45am - 1:15pm</td>
+<td>Lunch;<br><i>Grand Ballroom</i></td>
+</tr>
+<tr>
+<td>1:30pm - 2pm</td>
+<td><b>Chuck Russel - Organizer,</b><br>Final Comments;<br><i>Grand Ballroom</i></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
 
 
   <!-- This is my Footer -->
@@ -164,17 +249,9 @@
   <!-- Closing Footer -->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>

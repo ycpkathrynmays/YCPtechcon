@@ -177,6 +177,7 @@ textarea {
   padding: 20px;
   width: 75vw;
   height: auto;
+  margin-top: 100px;
 }
 
    #MainNav{
@@ -241,7 +242,14 @@ textarea {
    .Content h1{
      font-size: 36px;
      margin: 0;
+     text-align: center;
+
    }
+
+    .Content h2{
+       text-align: center;
+    }
+
    .Content p{
      font-size: 18px;
      margin: 50px;
@@ -386,6 +394,17 @@ justify-content: center;
 .schedule td{
   border: 1px black solid;
 }
+
+.schedule_mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.schedule_mobile td{
+  border: 1px black solid;
+}
+
 .Days{
   display: flex;
   flex-direction: row;
@@ -497,6 +516,7 @@ padding: 10% 0 10% 0;
   display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 55px;
 }
 
 .contact_info{
@@ -649,7 +669,9 @@ input[type=button], input[type=submit], input[type=reset] {
 
 @media only screen and (max-width: 1440px) {
     /* Style adjustments for viewports that meet the condition */
-
+.schedule_mobile{
+  display: none;
+}
 }
 
 @media only screen and (max-width: 768px) {
@@ -701,11 +723,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #MainNav_Mobile{
-  display: block;
   font-size: 18px;
   color: #918F8F;
   align-items: center;
-  display: flex;
 }
 
 #MainNav_Mobile ul{
@@ -714,7 +734,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #MainNav_Mobile ul li a{
-
+  display: block;
   text-decoration: none;
   color: #918F8F;
 }
@@ -790,6 +810,22 @@ ul li a.page_indicator{
       height: auto;
 
     }
+
+    .schedule{
+      display: none;
+    }
+
+    .schedule_mobile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+    .schedule_mobile td{
+      border: 1px black solid;
+    }
+
+
 
 }
 
